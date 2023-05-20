@@ -1,8 +1,8 @@
 import math
-num = int(input("Digite um numero: "))
-if num < 1 or num > 2:
+grau = int(input("Digite um numero: "))
+if grau < 1 or grau > 2:
     print("Grau inválido")
-elif num==1:
+elif grau==1:
     print("A equação é do primeiro grau")
     a = int(input("Digite um numero para A: "))
     if a==0:
@@ -12,7 +12,7 @@ elif num==1:
         x = (-b/a)
         x = float(x)
         print(f'{x:.2f}')
-elif num==2:
+elif grau==2:
     print("A equação é do segundo grau")
     a = int(input("Digite um numero para A: "))
     if a==0:
@@ -24,7 +24,7 @@ elif num==2:
         if delta < 0:
             print("A equação não possui raízes reais")
         if delta==0:
-            print("A equação possui apenas uma raiz real")
+            print("A permissão possui uma raiz real")
             r = -b / (2*a)
             print(f'{r:.2f}')
         if delta > 0:
